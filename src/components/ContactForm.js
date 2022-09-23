@@ -9,7 +9,7 @@ const ContactForm = ({ addContact }) => {
     name: "",
     phone: "",
     email: "",
-    photo_url: "",
+    photo: "",
   });
 
   const onSubmit = (e, newContact) => {
@@ -65,7 +65,7 @@ const ContactForm = ({ addContact }) => {
             onChange={(e) =>
               setNewContact((state) => ({
                 ...state,
-                photo_url: e.target.value,
+                photo: e.target.value,
               }))
             }
           />
